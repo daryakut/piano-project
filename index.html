@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piano lessons 🎹</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #dd6b00;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid #f99807;
+        color: #ff5100;
+        background-color: #f9c107;
+        opacity: 0.9;
+        padding: 19px;
+        font-size: 18px;
+        border-radius: 8px;
+        font-weight: 900;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.7;
+        font-size: 16px;
+        margin: 40px 0 20px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      button {
+        display: block;
+        margin: 22px auto;
+        background: #dd6b00;
+        color: rgb(255, 249, 78);
+        font-size: 20px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 7px 7px 7px rgba(30, 29, 27, 0.6);
+        transition: all 400ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.6;
+        cursor: pointer;
+      }
+      .letters {
+        color: rgb(249, 138, 11);
+        font-size: 200%;
+        font-family: serif;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+        border-radius: 8px;
+       background: linear-gradient(90deg, rgb(212, 224, 241) 0%, rgb(139, 102, 241) 100%);
+          }
+
+      .learn-more {
+        color: #dd6b00;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+        color: rgb(242, 132, 7);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>PIANO LESSONS FOR EVERYONE</h1>
+      <h2>
+        <strong>Start your music journey right now!</strong>
+      </h2>
+      <img
+        src="https://images.hdqwalls.com/download/girl-playing-piano-painting-4k-ut-1280x1024.jpg"
+        alt="Girl plays the piano"
+      />
+      <p>
+        <span class="letters">If you want to learn to play the piano,</span
+        ><br />
+        you want to get going quickly and start making music right away. One of
+        the most inspiring stories about learning to play the piano fast is Ryan
+        Gosling, who starred as an aspiring jazz pianist in the Oscar-winning
+        film, “La-La Land”.  In order to achieve his goal of playing live piano
+        for the film, Gosling took two hour piano lessons five days a week for
+        three months. It paid off, as his piano playing was one of the
+        highlights of the film.<hr> <br /><br />
+        <em>So … Let's do it!</em>
+      </p>
+      <a
+        href="https://www.youtube.com/watch?v=_inXSB8rwUY"
+        target="_blank"
+        class="learn-more"
+      >
+        Press to see how you can play the piano after my lessons
+      </a>
+      <button class="lesson-button">Book a lesson</button>
+      <p class="footer">
+        This page was built by
+        <a href="https://www.facebook.com/dariakutluieva" target="_blank">
+          Daria Kutluieva
+        </a>
+      </p>
+    </div>
+    <script>
+      function book() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        if(name === "" || email===""){
+             alert("Sorry, but you should give your contact")
+        } else{
+        alert(
+          "Thank you, " +
+            name +
+            "! I'll write you email to arrange our first piano lesson! 🎹"
+        );
+        }
+      }
+
+      let buyButton = document.querySelector(".lesson-button");
+      buyButton.addEventListener("click", book);
+    </script>
+  </body>
+</html>
